@@ -6,151 +6,433 @@
 
     <link href="assets/img/favicon_mb.png" rel="shortcut icon" type="image/i-icon">
 
-    <link rel="stylesheet" href="assets/plugins/Skeleton-2.0.4/css/normalize.css" />
-    <link rel="stylesheet" href="assets/plugins/Skeleton-2.0.4/css/skeleton.css" />
+    <link rel="stylesheet" href="assets/plugins/Skeleton-2.0.4/css/normalize.css"/>
+    <link rel="stylesheet" href="assets/plugins/Skeleton-2.0.4/css/skeleton.css"/>
 
-    <link rel="stylesheet" href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css"/>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/responsive.css"/>
 
 </head>
 <body>
 
 
+<div class="pre-header">
 
-    <div class="pre-header">
+    <div class="pre-header-buttons container">
+        <div class="three columns">&nbsp;</div>
+        <div class="nine columns">
+            <div class="dib pre-header-btn"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Поиск на карте</div>
+            <div class="dib pre-header-btn"><i class="fa fa-sliders"></i>&nbsp;&nbsp;Поиск по параметрам</div>
+            <div class="dib pre-header-btn pre-header-venues"><i class="fa fa-ruble"></i>&nbsp;&nbsp;Площадкам</div>
+        </div>
 
-        <div class="pre-header-buttons container">
-            <div class="three columns">&nbsp;</div>
-            <div class="nine columns">
-                <div class="dib pre-header-btn"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Поиск на карте</div>
-                <div class="dib pre-header-btn"><i class="fa fa-sliders"></i>&nbsp;&nbsp;Поиск по параметрам</div>
-                <div class="dib pre-header-btn pre-header-venues"><i class="fa fa-ruble"></i>&nbsp;&nbsp;Площадкам</div>
-            </div>
+    </div>
+</div>
+
+<div class="header">
+
+    <div class="container">
+
+        <div class="logo three columns">
+            <div class="logo-main">Easy H<span style="color:red;">a</span>ll</div>
+            <div class="logo-sub">Поиск площадок</div>
+        </div>
+
+        <div class="main-menu nine columns">
+
+            <a href="#" class="menu-i">Концертные залы</a>
+            <a href="#" class="menu-i">Театры</a>
+            <a href="#" class="menu-i">Клубы</a>
+            <a href="#" class="menu-i">Выставочные залы</a>
+            <a href="#" class="menu-i">Конференц залы</a>
 
         </div>
+
     </div>
 
-    <div class="header">
+</div>
+
+<div class="main-search">
+    <div class="main-search-bg"></div>
+    <div class="container">
+
+        <div class="main-search-box">
+
+
+            <table class="main-search-table">
+                <tr>
+                    <td>
+                        <div class="main-search-block">
+                            <div class="main-search-param-box">Я ищу:</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="main-search-block">
+                            <div class="main-search-param-box" data-id="CONCERT_HALL">
+                                <div class="main-search-param-label">Концертный зал</div>
+                                <div class="main-search-param-angle-up"><i class="fa fa-angle-up"></i></div>
+                                <div class="main-search-param-angle-down"><i class="fa fa-angle-down"></i></div>
+                            </div>
+                            <div class="main-search-param-dd">
+                                <div class="main-search-param-dd-item" data-id="ANY">- Любое -</div>
+                                <div class="main-search-param-dd-item" data-id="CONCERT_HALL">Концертный зал</div>
+                                <div class="main-search-param-dd-item" data-id="THEATRE">Театр</div>
+                                <div class="main-search-param-dd-item" data-id="CLUB">Клуб</div>
+                                <div class="main-search-param-dd-item" data-id="EXHIBITION_HALL">Выставочный зал</div>
+                                <div class="main-search-param-dd-item" data-id="CONFERENCR_HALL">Конференц зал</div>
+                                <div class="main-search-param-dd-item" data-id="BAR">Бар</div>
+                                <div class="main-search-param-dd-item" data-id="OPEN_AIR">Open Air</div>
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="main-search-block">
+                            <div class="main-search-param-box" data-id="PLC_50">
+                                <div class="main-search-param-label">До 300 мест</div>
+                                <div class="main-search-param-angle-up"><i class="fa fa-angle-up"></i></div>
+                                <div class="main-search-param-angle-down"><i class="fa fa-angle-down"></i></div>
+                            </div>
+                            <div class="main-search-param-dd">
+                                <div class="main-search-param-dd-item" data-id="ANY">- Любое -</div>
+                                <div class="main-search-param-dd-item" data-id="PLC_50">До 50 мест</div>
+                                <div class="main-search-param-dd-item" data-id="PLC_200">До 200 мест</div>
+                                <div class="main-search-param-dd-item" data-id="PLC_500">До 500 мест</div>
+                                <div class="main-search-param-dd-item" data-id="PLC_800">До 800 мест</div>
+                                <div class="main-search-param-dd-item" data-id="PLC_1500">До 1500 мест</div>
+                                <div class="main-search-param-dd-item" data-id="PLC_3000">До 3000 мест</div>
+                                <div class="main-search-param-dd-item" data-id="PLC_OVER_3000">3000 и более мест</div>
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="main-search-block">
+                            <div class="main-search-param-box" data-id="CAO">
+                                <div class="main-search-param-label">в ЦАО</div>
+                                <div class="main-search-param-angle-up"><i class="fa fa-angle-up"></i></div>
+                                <div class="main-search-param-angle-down"><i class="fa fa-angle-down"></i></div>
+                            </div>
+                            <div class="main-search-param-dd">
+                                <div class="main-search-param-dd-item" data-id="ANY">- Любое -</div>
+                                <div class="main-search-param-dd-item" data-id="CAO">в ЦАО</div>
+                                <div class="main-search-param-dd-item" data-id="SAO">в CАО</div>
+                                <div class="main-search-param-dd-item" data-id="SVAO">в СВАО</div>
+                                <div class="main-search-param-dd-item" data-id="VAO">в ВАО</div>
+                                <div class="main-search-param-dd-item" data-id="UVAO">в ЮВАО</div>
+                                <div class="main-search-param-dd-item" data-id="UAO">в ЮАО</div>
+                                <div class="main-search-param-dd-item" data-id="UZAO">в ЮЗАО</div>
+                                <div class="main-search-param-dd-item" data-id="ZAO">в ЗАО</div>
+                                <div class="main-search-param-dd-item" data-id="SZAO">в СЗАО</div>
+                                <div class="main-search-param-dd-item" data-id="MO">в Области</div>
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="main-search-block">
+                            <div class="main-search-param-box" data-id="PRC_120">
+                                <div class="main-search-param-label">до 120 тыс. руб.</div>
+                                <div class="main-search-param-angle-up"><i class="fa fa-angle-up"></i></div>
+                                <div class="main-search-param-angle-down"><i class="fa fa-angle-down"></i></div>
+                            </div>
+                            <div class="main-search-param-dd">
+                                <div class="main-search-param-dd-item" data-id="ANY">- Любое -</div>
+                                <div class="main-search-param-dd-item" data-id="PRC_120">до 120 тыс. руб.</div>
+                                <div class="main-search-param-dd-item" data-id="PRC_180">до 180 тыс. руб.</div>
+                                <div class="main-search-param-dd-item" data-id="PRC_250">до 250 тыс. руб.</div>
+                                <div class="main-search-param-dd-item" data-id="PRC_500">до 500 тыс. руб.</div>
+                                <div class="main-search-param-dd-item" data-id="PRC_800">до 800 тыс. руб.</div>
+                                <div class="main-search-param-dd-item" data-id="PRC_1500">до 1,5 млн. руб.</div>
+                                <div class="main-search-param-dd-item" data-id="PRC_3000">до 3 млн. руб.</div>
+                            </div>
+
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="main-search-expand">Расширенный поиск</div>
+            <div class="main-search-execute"><i class="fa fa-search"></i>&nbsp;&nbsp;Найти</div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<div class="site-content">
+
+    <div class="container">
+        <div class="row">
+            <div class="six columns venue-type-set-box" data-type="CONCERT_HALL">
+                <div class="venue-type-set-image"></div>
+                <div class="venue-type-set-info">
+                    <div class="venue-type-set-title">Концертные залы</div>
+                    <div class="venue-type-set-links">
+                        <a href="#" class="venue-type-set-link">с Танцполом</a>
+                        <a href="#" class="venue-type-set-link">до 300 мест</a>
+                        <a href="#" class="venue-type-set-link">на Проходном месте</a>
+                        <a href="#" class="venue-type-set-link">Старинное здание</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="six columns venue-type-set-box" data-type="THEATRE">
+                <div class="venue-type-set-image"></div>
+                <div class="venue-type-set-info">
+                    <div class="venue-type-set-title">Театры</div>
+                    <div class="venue-type-set-links">
+                        <a href="#" class="venue-type-set-link">в ЦАО</a>
+                        <a href="#" class="venue-type-set-link">после ремонта</a>
+                        <a href="#" class="venue-type-set-link">Новые театры</a>
+                        <a href="#" class="venue-type-set-link">с электронным билетом</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="six columns venue-type-set-box" data-type="CLUB">
+                <div class="venue-type-set-image"></div>
+                <div class="venue-type-set-info">
+                    <div class="venue-type-set-title">Клубы</div>
+                    <div class="venue-type-set-links">
+                        <a href="#" class="venue-type-set-link">Техно</a>
+                        <a href="#" class="venue-type-set-link">Многоэтажные</a>
+                        <a href="#" class="venue-type-set-link">с бассейном</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="six columns venue-type-set-box" data-type="EXHIBITION_HALL">
+                <div class="venue-type-set-image"></div>
+                <div class="venue-type-set-info">
+                    <div class="venue-type-set-title">Выставочные залы</div>
+                    <div class="venue-type-set-links">
+                        <a href="#" class="venue-type-set-link">Маленькие</a>
+                        <a href="#" class="venue-type-set-link">Средние</a>
+                        <a href="#" class="venue-type-set-link">Большие</a>
+                        <a href="#" class="venue-type-set-link">Огромные</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="six columns venue-type-set-box" data-type="CONFERENCE_HALL">
+                <div class="venue-type-set-image"></div>
+                <div class="venue-type-set-info">
+                    <div class="venue-type-set-title">Конференц залы</div>
+                    <div class="venue-type-set-links">
+                        <a href="#" class="venue-type-set-link">Премиум класса</a>
+                        <a href="#" class="venue-type-set-link">до 50 мест</a>
+                        <a href="#" class="venue-type-set-link">в Гостинице</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="six columns venue-type-set-box" data-type="BAR">
+                <div class="venue-type-set-image"></div>
+                <div class="venue-type-set-info">
+                    <div class="venue-type-set-title">Бары</div>
+                    <div class="venue-type-set-links">
+                        <a href="#" class="venue-type-set-link">с Танцполом</a>
+                        <a href="#" class="venue-type-set-link">до 300 мест</a>
+                        <a href="#" class="venue-type-set-link">на Проходном месте</a>
+                        <a href="#" class="venue-type-set-link">Старое здание</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="featured-block row">
 
         <div class="container">
 
-            <div class="logo three columns">
-                <div class="logo-main">Easy H<span style="color:red;">a</span>ll</div>
-                <div class="logo-sub">Поиск площадок</div>
+            <div class="featured-title">Популярные площадки / залы</div>
+            <a href="#" target="_blank" class="featured-placement">Как разместиться здесь?</a>
+
+            <div class="featured-menu">
+                <div class="featured-menu-i selected" data-id="CONCERT_HALL">Концертные залы</div>
+                <div class="featured-menu-i" data-id="THEATRE">Театры</div>
+                <div class="featured-menu-i" data-id="CLUB">Клубы</div>
+                <div class="featured-menu-i" data-id="EXHIBITION_HALL">Выставочные залы</div>
+                <div class="featured-menu-i" data-id="CONFERENCR_HALL">Конференц залы</div>
+                <div class="featured-menu-i" data-id="BAR">Бары</div>
+                <div class="featured-menu-i" data-id="OPEN_AIR">Open Air</div>
             </div>
 
-            <div class="main-menu nine columns">
+            <div class="row">
 
-                <a href="#" class="menu-i">Концертные залы</a>
-                <a href="#" class="menu-i">Театры</a>
-                <a href="#" class="menu-i">Клубы</a>
-                <a href="#" class="menu-i">Выставочные залы</a>
-                <a href="#" class="menu-i">Конференц залы</a>
+                <div class="four columns f-hall" data-id="1">
+                    <div class="f-hall-image" style="background-image: url(assets/img/hall-1.png)"></div>
+                    <div class="f-hall-info">
+                        <div class="f-hall-title">Светлановский зал</div>
+                        <div class="f-hall-venue">Московский Дом Музыки</div>
+                        <div class="f-hall-metro-item">
+                            <div class="f-hall-metro-circle" style="background-color: #87392c;">5</div>
+                            <div class="f-hall-metro-station">Павелецкая, <span
+                                    class="f-hall-from-metro">12 мин пешком</span></div>
+                        </div>
+                        <div class="f-hall-metro-item">
+                            <div class="f-hall-metro-circle" style="background-color: #00a34b;">2</div>
+                            <div class="f-hall-metro-station">Павелецкая, <span
+                                    class="f-hall-from-metro">11 мин пешком</span></div>
+                        </div>
+                        <div class="f-hall-places">
+                            <div class="f-hall-places-icon"></div>
+                            <div class="f-hall-places-count">1699 мест</div>
+                            <div class="f-hall-quick-view">Быстрый<br/>просмотр</div>
+                        </div>
+                    </div>
+                    <div class="f-hall-order">
+                        <div class="f-hall-rent-price">1 060 000 руб.</div>
+                        <div class="f-hall-order-cta">Арендовать</div>
+                    </div>
+                </div>
 
+                <div class="four columns f-hall" data-id="2">
+                    <div class="f-hall-image" style="background-image: url(assets/img/hall-2.jpg)"></div>
+                    <div class="f-hall-info">
+                        <div class="f-hall-title">Большой зал Консерватории</div>
+                        <div class="f-hall-venue">Консерватория им. П.И. Чайковского</div>
+                        <div class="f-hall-metro-item">
+                            <div class="f-hall-metro-circle" style="background-color: #0564b1;">3</div>
+                            <div class="f-hall-metro-station">Арбатская, <span
+                                    class="f-hall-from-metro">8 мин пешком</span></div>
+                        </div>
+                        <div class="f-hall-metro-item">
+                            <div class="f-hall-metro-circle" style="background-color: #ef161e;">1</div>
+                            <div class="f-hall-metro-station">Охотный ряд, <span
+                                    class="f-hall-from-metro">11 мин пешком</span></div>
+                        </div>
+                        <div class="f-hall-metro-item">
+                            <div class="f-hall-metro-circle" style="background-color: #ef161e;">1</div>
+                            <div class="f-hall-metro-station">Библиотека им. Ленина, <span class="f-hall-from-metro">12 мин пешком</span>
+                            </div>
+                        </div>
+                        <div class="f-hall-places">
+                            <div class="f-hall-places-icon"></div>
+                            <div class="f-hall-places-count">1737 мест</div>
+                            <div class="f-hall-quick-view">Быстрый<br/>просмотр</div>
+                        </div>
+                    </div>
+                    <div class="f-hall-order">
+                        <div class="f-hall-rent-price">1 480 000 руб.</div>
+                        <div class="f-hall-order-cta">Арендовать</div>
+                    </div>
+                </div>
+
+                <div class="four columns f-hall" data-id="2">
+                    <div class="f-hall-image" style="background-image: url(assets/img/hall-3.png)"></div>
+                    <div class="f-hall-info">
+                        <div class="f-hall-title">Московский Мюзик-Холл</div>
+                        <div class="f-hall-venue">Москонцерт</div>
+                        <div class="f-hall-metro-item">
+                            <div class="f-hall-metro-circle" style="background-color: #87392c;">5</div>
+                            <div class="f-hall-metro-station">Комсомольская, <span class="f-hall-from-metro">7 мин пешком</span>
+                            </div>
+                        </div>
+                        <div class="f-hall-metro-item">
+                            <div class="f-hall-metro-circle" style="background-color: #ef161e;">1</div>
+                            <div class="f-hall-metro-station">Комсомольская, <span class="f-hall-from-metro">7 мин пешком</span>
+                            </div>
+                        </div>
+                        <div class="f-hall-places">
+                            <div class="f-hall-places-icon"></div>
+                            <div class="f-hall-places-count">564 места</div>
+                            <div class="f-hall-quick-view">Быстрый<br/>просмотр</div>
+                        </div>
+                    </div>
+                    <div class="f-hall-order">
+                        <div class="f-hall-rent-price">420 000 руб.</div>
+                        <div class="f-hall-order-cta">Арендовать</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="featured-row-more">
+                <i class="fa fa-plus"></i>&nbsp;&nbsp;Еще 75 концертных залов
             </div>
 
         </div>
 
     </div>
 
-    <div class="main-search">
-        <div class="main-search-bg"></div>
+    <div class="promo-block row">
         <div class="container">
 
-            <div class="main-search-box">
+            <div class="uni-title">Разместить площадку</div>
+
+            <br/>
+            <br/>
+
+            <div class="row">
+
+                <div class="five columns">
+                    Зарегистрируйте площадку на сервисе <b>easyHall</b> и
+                    начните получайть заявки от организаторов мероприятий
+                    уже сейчас!
+
+                    <br/><br/><br/>
+
+                    <input type="email" class="register-venue-email" placeholder="Введите Ваш Email"/>
+
+                    <div class="register-venue">Начать!</div>
+                </div>
+
+                <div class="seven columns">
+
+                    <div class="row">
+
+                        <div class="six columns empty">
+                            empty
+                        </div>
+
+                        <div class="six columns empty">
+                            empty
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="devider"></div>
+
+            <div class="row">
+
+                <div class="six columns">
+
+                    <div class="fw600 subscription-title">Получать новости и акции сервиса по СМС</div>
+
+                    <div class="subscription-block">
+                        <span class="plus-7">+7</span>
+                        <input type="tel" class="subscription-sms" placeholder="Ваш номер телефона"/>
+
+                        <div class="subscription-sms-submit">Подписаться</div>
+                    </div>
 
 
-                <table class="main-search-table">
-                    <tr>
-                            <td>
-                                <div class="main-search-block"><div class="main-search-param-box">Я ищу:</div></div>
-                            </td>
-                            <td>
-                                <div class="main-search-block">
-                                    <div class="main-search-param-box" data-id="CONCERT_HALL">
-                                        <div class="main-search-param-label">Концертный зал</div>
-                                        <div class="main-search-param-angle-up"><i class="fa fa-angle-up"></i></div>
-                                        <div class="main-search-param-angle-down"><i class="fa fa-angle-down"></i></div>
-                                    </div><div class="main-search-param-dd">
-                                    <div class="main-search-param-dd-item" data-id="ANY">- Любое -</div>
-                                    <div class="main-search-param-dd-item" data-id="CONCERT_HALL">Концертный зал</div>
-                                    <div class="main-search-param-dd-item" data-id="THEATRE">Театр</div>
-                                    <div class="main-search-param-dd-item" data-id="CLUB">Клуб</div>
-                                    <div class="main-search-param-dd-item" data-id="EXHIBITION_HALL">Выставочный зал</div>
-                                    <div class="main-search-param-dd-item" data-id="CONFERENCR_HALL">Конференц зал</div>
-                                    <div class="main-search-param-dd-item" data-id="BAR">Бар</div>
-                                    <div class="main-search-param-dd-item" data-id="OPEN_AIR">Open Air</div>
-                                </div>
+                </div>
 
-                                </div>
-                            </td>
-                            <td>
-                                <div class="main-search-block">
-                                    <div class="main-search-param-box" data-id="PLC_50">
-                                        <div class="main-search-param-label">До 300 мест</div>
-                                        <div class="main-search-param-angle-up"><i class="fa fa-angle-up"></i></div>
-                                        <div class="main-search-param-angle-down"><i class="fa fa-angle-down"></i></div>
-                                    </div><div class="main-search-param-dd">
-                                    <div class="main-search-param-dd-item" data-id="ANY">- Любое -</div>
-                                    <div class="main-search-param-dd-item" data-id="PLC_50">До 50 мест</div>
-                                    <div class="main-search-param-dd-item" data-id="PLC_200">До 200 мест</div>
-                                    <div class="main-search-param-dd-item" data-id="PLC_500">До 500 мест</div>
-                                    <div class="main-search-param-dd-item" data-id="PLC_800">До 800 мест</div>
-                                    <div class="main-search-param-dd-item" data-id="PLC_1500">До 1500 мест</div>
-                                    <div class="main-search-param-dd-item" data-id="PLC_3000">До 3000 мест</div>
-                                    <div class="main-search-param-dd-item" data-id="PLC_OVER_3000">3000 и более мест</div>
-                                </div>
+                <div class="six columns">
 
-                                </div>
-                            </td>
-                            <td>
-                                <div class="main-search-block">
-                                    <div class="main-search-param-box" data-id="CAO">
-                                        <div class="main-search-param-label">в ЦАО</div>
-                                        <div class="main-search-param-angle-up"><i class="fa fa-angle-up"></i></div>
-                                        <div class="main-search-param-angle-down"><i class="fa fa-angle-down"></i></div>
-                                    </div><div class="main-search-param-dd">
-                                        <div class="main-search-param-dd-item" data-id="ANY">- Любое -</div>
-                                        <div class="main-search-param-dd-item" data-id="CAO">в ЦАО</div>
-                                        <div class="main-search-param-dd-item" data-id="SAO">в CАО</div>
-                                        <div class="main-search-param-dd-item" data-id="SVAO">в СВАО</div>
-                                        <div class="main-search-param-dd-item" data-id="VAO">в ВАО</div>
-                                        <div class="main-search-param-dd-item" data-id="UVAO">в ЮВАО</div>
-                                        <div class="main-search-param-dd-item" data-id="UAO">в ЮАО</div>
-                                        <div class="main-search-param-dd-item" data-id="UZAO">в ЮЗАО</div>
-                                        <div class="main-search-param-dd-item" data-id="ZAO">в ЗАО</div>
-                                        <div class="main-search-param-dd-item" data-id="SZAO">в СЗАО</div>
-                                        <div class="main-search-param-dd-item" data-id="MO">в Области</div>
-                                    </div>
+                    <div class="fw600 subscription-title">Мы в социальных сетях:</div>
 
-                                </div>
-                            </td>
-                            <td>
-                                <div class="main-search-block">
-                                    <div class="main-search-param-box" data-id="PRC_120">
-                                        <div class="main-search-param-label">до 120 тыс. руб.</div>
-                                        <div class="main-search-param-angle-up"><i class="fa fa-angle-up"></i></div>
-                                        <div class="main-search-param-angle-down"><i class="fa fa-angle-down"></i></div>
-                                    </div><div class="main-search-param-dd">
-                                        <div class="main-search-param-dd-item" data-id="ANY">- Любое -</div>
-                                        <div class="main-search-param-dd-item" data-id="PRC_120">до 120 тыс. руб.</div>
-                                        <div class="main-search-param-dd-item" data-id="PRC_180">до 180 тыс. руб.</div>
-                                        <div class="main-search-param-dd-item" data-id="PRC_250">до 250 тыс. руб.</div>
-                                        <div class="main-search-param-dd-item" data-id="PRC_500">до 500 тыс. руб.</div>
-                                        <div class="main-search-param-dd-item" data-id="PRC_800">до 800 тыс. руб.</div>
-                                        <div class="main-search-param-dd-item" data-id="PRC_1500">до 1,5 млн. руб.</div>
-                                        <div class="main-search-param-dd-item" data-id="PRC_3000">до 3 млн. руб.</div>
-                                    </div>
+                    <div class="social-icon social-vk"><i class="fa fa-vk"></i></div>
+                    <div class="social-icon social-fb"><i class="fa fa-facebook"></i></div>
+                    <div class="social-icon social-tw"><i class="fa fa-twitter"></i></div>
+                    <div class="social-icon social-in"><i class="fa fa-instagram"></i></div>
 
-                                </div>
-                            </td>
-                        </tr>
-                </table>
-
-                <div class="main-search-expand">Расширенный поиск</div>
-                <div class="main-search-execute"><i class="fa fa-search"></i>&nbsp;&nbsp;Найти</div>
+                </div>
 
             </div>
 
@@ -158,273 +440,80 @@
         </div>
     </div>
 
-    <div class="site-content">
+    <div class="information-block row">
 
         <div class="container">
-            <div class="row">
-                <div class="six columns venue-type-set-box" data-type="CONCERT_HALL">
-                    <div class="venue-type-set-image"></div>
-                    <div class="venue-type-set-info">
-                        <div class="venue-type-set-title">Концертные залы</div>
-                        <div class="venue-type-set-links">
-                            <a href="#" class="venue-type-set-link">с Танцполом</a>
-                            <a href="#" class="venue-type-set-link">до 300 мест</a>
-                            <a href="#" class="venue-type-set-link">на Проходном месте</a>
-                            <a href="#" class="venue-type-set-link">Старое здание</a>
-                        </div>
-                    </div>
+            <br/>
+            <br/>
 
-                </div>
+            <div class="uni-title">Поиск и аренда площадок и залов на Easyhall.ru</div>
 
-                <div class="six columns venue-type-set-box" data-type="THEATRE">
-                    <div class="venue-type-set-image"></div>
-                    <div class="venue-type-set-info">
-                        <div class="venue-type-set-title">Театры</div>
-                        <div class="venue-type-set-links">
-                            <a href="#" class="venue-type-set-link">в ЦАО</a>
-                            <a href="#" class="venue-type-set-link">после ремонта</a>
-                            <a href="#" class="venue-type-set-link">Новые театры</a>
-                            <a href="#" class="venue-type-set-link">с электронным билетом</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <br/>
+            <br/>
 
             <div class="row">
-                <div class="six columns venue-type-set-box" data-type="CLUB">
-                    <div class="venue-type-set-image"></div>
-                    <div class="venue-type-set-info">
-                        <div class="venue-type-set-title">Клубы</div>
-                        <div class="venue-type-set-links">
-                            <a href="#" class="venue-type-set-link">Техно</a>
-                            <a href="#" class="venue-type-set-link">Многоэтажные</a>
-                            <a href="#" class="venue-type-set-link">с бассейном</a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="six columns venue-type-set-box" data-type="EXHIBITION_HALL">
-                    <div class="venue-type-set-image"></div>
-                    <div class="venue-type-set-info">
-                        <div class="venue-type-set-title">Выставочные залы</div>
-                        <div class="venue-type-set-links">
-                            <a href="#" class="venue-type-set-link">Маленькие</a>
-                            <a href="#" class="venue-type-set-link">Средние</a>
-                            <a href="#" class="venue-type-set-link">Большие</a>
-                            <a href="#" class="venue-type-set-link">Огромные</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="six columns venue-type-set-box" data-type="CONFERENCE_HALL">
-                    <div class="venue-type-set-image"></div>
-                    <div class="venue-type-set-info">
-                        <div class="venue-type-set-title">Конференц залы</div>
-                        <div class="venue-type-set-links">
-                            <a href="#" class="venue-type-set-link">Премиум класса</a>
-                            <a href="#" class="venue-type-set-link">до 50 мест</a>
-                            <a href="#" class="venue-type-set-link">в Гостинице</a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="six columns venue-type-set-box" data-type="BAR">
-                    <div class="venue-type-set-image"></div>
-                    <div class="venue-type-set-info">
-                        <div class="venue-type-set-title">Бары</div>
-                        <div class="venue-type-set-links">
-                            <a href="#" class="venue-type-set-link">с Танцполом</a>
-                            <a href="#" class="venue-type-set-link">до 300 мест</a>
-                            <a href="#" class="venue-type-set-link">на Проходном месте</a>
-                            <a href="#" class="venue-type-set-link">Старое здание</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <div class="service-owner-image">
 
-        </div>
-
-        <div class="featured-block row">
-
-            <div class="container">
-
-                <div class="featured-title">Популярные площадки / залы</div>
-                <a href="#" target="_blank" class="featured-placement">Как разместиться здесь?</a>
-                <div class="featured-menu">
-                    <div class="featured-menu-i selected" data-id="CONCERT_HALL">Концертные залы</div>
-                    <div class="featured-menu-i" data-id="THEATRE">Театры</div>
-                    <div class="featured-menu-i" data-id="CLUB">Клубы</div>
-                    <div class="featured-menu-i" data-id="EXHIBITION_HALL">Выставочные залы</div>
-                    <div class="featured-menu-i" data-id="CONFERENCR_HALL">Конференц залы</div>
-                    <div class="featured-menu-i" data-id="BAR">Бары</div>
-                    <div class="featured-menu-i" data-id="OPEN_AIR">Open Air</div>
-                </div>
-
-                <div class="row">
-
-                    <div class="four columns f-hall" data-id="1">
-                        <div class="f-hall-image" style="background-image: url(assets/img/hall-1.png)"></div>
-                        <div class="f-hall-info">
-                            <div class="f-hall-title">Светлановский зал</div>
-                            <div class="f-hall-venue">Московский Дом Музыки</div>
-                            <div class="f-hall-metro-item">
-                                <div class="f-hall-metro-circle" style="background-color: #87392c;">5</div>
-                                <div class="f-hall-metro-station">Павелецкая, <span class="f-hall-from-metro">12 мин пешком</span></div>
-                            </div>
-                            <div class="f-hall-metro-item">
-                                <div class="f-hall-metro-circle" style="background-color: #00a34b;">2</div>
-                                <div class="f-hall-metro-station">Павелецкая, <span class="f-hall-from-metro">11 мин пешком</span></div>
-                            </div>
-                            <div class="f-hall-places">
-                                <div class="f-hall-places-icon"></div>
-                                <div class="f-hall-places-count">1699 мест</div>
-                                <div class="f-hall-quick-view">Быстрый<br/>просмотр</div>
-                            </div>
-                        </div>
-                        <div class="f-hall-order">
-                            <div class="f-hall-rent-price">1 060 000 руб.</div><div class="f-hall-order-cta">Арендовать</div>
-                        </div>
-                    </div>
-
-                    <div class="four columns f-hall" data-id="2">
-                        <div class="f-hall-image" style="background-image: url(assets/img/hall-2.jpg)"></div>
-                        <div class="f-hall-info">
-                            <div class="f-hall-title">Большой зал Консерватории</div>
-                            <div class="f-hall-venue">Консерватория им. П.И. Чайковского</div>
-                            <div class="f-hall-metro-item">
-                                <div class="f-hall-metro-circle" style="background-color: #0564b1;">3</div>
-                                <div class="f-hall-metro-station">Арбатская, <span class="f-hall-from-metro">8 мин пешком</span></div>
-                            </div>
-                            <div class="f-hall-metro-item">
-                                <div class="f-hall-metro-circle" style="background-color: #ef161e;">1</div>
-                                <div class="f-hall-metro-station">Охотный ряд, <span class="f-hall-from-metro">11 мин пешком</span></div>
-                            </div>
-                            <div class="f-hall-metro-item">
-                                <div class="f-hall-metro-circle" style="background-color: #ef161e;">1</div>
-                                <div class="f-hall-metro-station">Библиотека им. Ленина, <span class="f-hall-from-metro">12 мин пешком</span></div>
-                            </div>
-                            <div class="f-hall-places">
-                                <div class="f-hall-places-icon"></div>
-                                <div class="f-hall-places-count">1737 мест</div>
-                                <div class="f-hall-quick-view">Быстрый<br/>просмотр</div>
-                            </div>
-                        </div>
-                        <div class="f-hall-order">
-                            <div class="f-hall-rent-price">1 480 000 руб.</div><div class="f-hall-order-cta">Арендовать</div>
-                        </div>
-                    </div>
-
-                    <div class="four columns f-hall" data-id="2">
-                        <div class="f-hall-image" style="background-image: url(assets/img/hall-3.png)"></div>
-                        <div class="f-hall-info">
-                            <div class="f-hall-title">Московский Мюзик-Холл</div>
-                            <div class="f-hall-venue">Москонцерт</div>
-                            <div class="f-hall-metro-item">
-                                <div class="f-hall-metro-circle" style="background-color: #87392c;">5</div>
-                                <div class="f-hall-metro-station">Комсомольская, <span class="f-hall-from-metro">7 мин пешком</span></div>
-                            </div>
-                            <div class="f-hall-metro-item">
-                                <div class="f-hall-metro-circle" style="background-color: #ef161e;">1</div>
-                                <div class="f-hall-metro-station">Комсомольская, <span class="f-hall-from-metro">7 мин пешком</span></div>
-                            </div>
-                            <div class="f-hall-places">
-                                <div class="f-hall-places-icon"></div>
-                                <div class="f-hall-places-count">564 места</div>
-                                <div class="f-hall-quick-view">Быстрый<br/>просмотр</div>
-                            </div>
-                        </div>
-                        <div class="f-hall-order">
-                            <div class="f-hall-rent-price">420 000 руб.</div><div class="f-hall-order-cta">Арендовать</div>
-                        </div>
-                    </div>
+                    <div class="service-owner-name">Елена Миронова</div>
+                    <div class="service-owner-sub">Основатель сервиса EasyHall</div>
 
                 </div>
 
-
-                <div class="featured-row-more">
-                    <i class="fa fa-plus"></i>&nbsp;&nbsp;Еще 75 концертных залов
+                <div class="service-owner-text">
+                    Арендовать хорошую по соотношению цена-качество площадку или зал не так то просто, seo текст
+                    Однажды утром в обычный час пришли на рынок торговцы и принесли с собой свои товары. Здание рынка со
+                    всех сторон окружала галерея в шесть футов шириной, защищенная от полуденного зноя соломенной
+                    крышей, далеко выступавшей над стенами.
+                    <br/><br/>
+                    Но в это утро те торговцы, которые занимали площадку, обращенную к морю, не разложили товаров, а
+                    сбились в кучу и, размахивая руками, негромко залопотали о чем-то. Потому что там, на галерее,
+                    лежала объятая сном — нисколько не прекрасная — фигура Блайта-Вельзевула, Он покоился на измызганном
+                    кокосовом коврике, больше чем когда-либо похожий на падшего ангела.
+                    <br/><br/>
+                    <b>Добро пожаловать!</b>
                 </div>
+
 
             </div>
 
-        </div>
-
-        <div class="promo-block row">
-            <div class="container">
-
-                <div class="uni-title">Разместить площадку</div>
-
-                <br/>
-                <br/>
-
-                <div class="row">
-
-                    <div class="five columns">
-                        Зарегистрируйте площадку на сервисе <b>easyHall</b> и
-                        начните получайть заявки от организаторов мероприятий
-                        уже сейчас!
-
-                        <br/><br/><br/>
-
-                        <input type="email" class="register-venue-email" placeholder="Введите Ваш Email"/>
-                        <div class="register-venue">Начать!</div>
-                    </div>
-
-                    <div class="seven columns">
-
-                        <div class="row">
-
-                            <div class="six columns empty">
-                                empty
-                            </div>
-
-                            <div class="six columns empty">
-                                empty
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="devider"></div>
-
-                <div class="row">
-
-                    <div class="six columns">
-
-                        <div class="fw600 subscription-title">Получать новости и акции сервиса по СМС</div>
-
-                        <div class="subscription-block">
-                            <span class="plus-7">+7</span>
-                            <input type="tel" class="subscription-sms" placeholder="Ваш номер телефона"/>
-                            <div class="subscription-sms-submit">Подписаться</div>
-                        </div>
-
-
-                    </div>
-
-                    <div class="six columns">
-
-                        <div class="fw600 subscription-title">Мы в социальных сетях:</div>
-
-                        <div class="social-icon social-vk"><i class="fa fa-vk"></i></div>
-                        <div class="social-icon social-fb"><i class="fa fa-facebook"></i></div>
-                        <div class="social-icon social-tw"><i class="fa fa-twitter"></i></div>
-                        <div class="social-icon social-in"><i class="fa fa-instagram"></i></div>
-
-                    </div>
-
-                </div>
-
-
-
-            </div>
         </div>
 
     </div>
 
+</div>
+
+<div class="pre-footer">
+
+    <div class="container">
+        <div class="nine columns">
+            <a class="pre-footer-link" href="#">О Сервисе</a>
+            <a class="pre-footer-link" href="#">Контакты</a>
+            <a class="pre-footer-link" href="#">Карта сайта</a>
+            <a class="pre-footer-link" href="#">Новые площадки / залы</a>
+            <a class="pre-footer-link pre-footer-feedback" href="#">Обратная связь</a>
+            <a class="pre-footer-link" href="#">Мобильная версия</a>
+        </div>
+
+        <div class="three columns">
+            <div class="pre-footer-phone">
+                +7 (495) 685-45-45
+            </div>
+            <div class="pre-footer-phone-time">
+                с 9:00 до 18:00
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="copyright">
+        © EasyHall 2017 Все права защищены, сервис лицензирован.
+    </div>
+</div>
 
 
 <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>

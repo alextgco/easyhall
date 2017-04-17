@@ -592,3 +592,68 @@
     color: #047adc;
     text-decoration: underline;
 }
+.service-owner-image{
+    background-image: url(../img/depositphotos_13825192-Cute-young-business-woman-with.jpg);
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 50%;
+    float: left;
+    margin-bottom: 100px;
+    margin-right: 40px;
+
+}
+.service-owner-name {
+    margin-top: 240px;
+    font-weight: 600;
+}
+.service-owner-text{
+    padding-bottom: 110px;
+}
+.service-owner-sub{
+    font-size: 13px;
+}
+.pre-footer {
+    background-color: #3a505a;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+a.pre-footer-link {
+    color: #55d3fb;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+.pre-footer-link.pre-footer-feedback {
+    font-weight: bold;
+    font-size: 20px;
+    color: aliceblue;
+}
+a.pre-footer-link:hover {
+    color: #98e63c;
+}
+.pre-footer-phone {
+    font-family: arial,sans-serif;
+    font-size: 20px;
+    text-align: right;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+}
+.pre-footer-phone-time{
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 4px;
+}
+.footer {
+    background-color: #26353c;
+    color: rgba(255, 255, 255, 0.53);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 13px;
+}

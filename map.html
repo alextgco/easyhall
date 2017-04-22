@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Hall - Аренда площадки</title>
+
+    <link href="assets/img/favicon_mb.png" rel="shortcut icon" type="image/i-icon">
+
+    <link rel="stylesheet" href="assets/plugins/Skeleton-2.0.4/css/normalize.css"/>
+    <link rel="stylesheet" href="assets/plugins/Skeleton-2.0.4/css/skeleton.css"/>
+
+    <link rel="stylesheet" href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css"/>
+
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/responsive.css"/>
+
+</head>
+<body>
+
+
+<div class="pre-header">
+
+    <div class="pre-header-buttons container">
+        <div class="three columns">&nbsp;</div>
+        <div class="nine columns">
+            <div class="dib pre-header-btn"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Поиск на карте</div>
+            <div class="dib pre-header-btn"><i class="fa fa-sliders"></i>&nbsp;&nbsp;Поиск по параметрам</div>
+            <div class="dib pre-header-btn pre-header-venues"><i class="fa fa-ruble"></i>&nbsp;&nbsp;Площадкам</div>
+        </div>
+
+    </div>
+</div>
+
+<div class="header">
+
+    <div class="container">
+
+        <div class="logo three columns">
+            <div class="logo-main">Easy H<span style="color:red;">a</span>ll</div>
+            <div class="logo-sub">Поиск площадок</div>
+        </div>
+
+        <div class="main-menu nine columns">
+
+            <a href="#" class="menu-i">Концертные залы</a>
+            <a href="#" class="menu-i">Театры</a>
+            <a href="#" class="menu-i">Клубы</a>
+            <a href="#" class="menu-i">Выставочные залы</a>
+            <a href="#" class="menu-i">Конференц залы</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="site-content">
+
+    <div class="row e-search-bg">
+
+        <div class="container">
+
+
+            <div class="e-search-title">Поиск площадок/залов на карте Москвы</div>
+
+
+            <div class="e-search-box">
+
+                <div class="row">
+
+                    <div class="three columns e-search-block"  data-id="VENUE_TYPE">
+                        <div class="e-search-label">Тип площадки/зала:</div>
+                        <div class="e-search-param-box" data-id="CONCERT_HALL">
+                            <div class="e-search-param-label">Концертный зал</div>
+                            <div class="e-search-param-angle-up"><i class="fa fa-angle-up"></i></div>
+                            <div class="e-search-param-angle-down"><i class="fa fa-angle-down"></i></div>
+                        </div>
+                        <div class="e-search-param-dd">
+                            <div class="e-search-param-dd-item" data-id="ANY">- Любое -</div>
+                            <div class="e-search-param-dd-item" data-id="CONCERT_HALL">Концертный зал</div>
+                            <div class="e-search-param-dd-item" data-id="THEATRE">Театр</div>
+                            <div class="e-search-param-dd-item" data-id="CLUB">Клуб</div>
+                            <div class="e-search-param-dd-item" data-id="EXHIBITION_HALL">Выставочный зал</div>
+                            <div class="e-search-param-dd-item" data-id="CONFERENCR_HALL">Конференц зал</div>
+                            <div class="e-search-param-dd-item" data-id="BAR">Бар</div>
+                            <div class="e-search-param-dd-item" data-id="OPEN_AIR">Open Air</div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="three columns e-search-block"  data-id="PLACE_COUNT">
+                        <div class="e-search-label">Количество мест:</div>
+                        <div class="e-search-param-box" data-id="CONCERT_HALL">
+                            <div class="e-search-param-label">- Любое -</div>
+                            <div class="e-search-param-angle-up"><i class="fa fa-angle-up"></i></div>
+                            <div class="e-search-param-angle-down"><i class="fa fa-angle-down"></i></div>
+                        </div>
+                        <div class="e-search-param-dd">
+
+                        </div>
+
+                    </div>
+
+                    <div class="three columns e-search-block"  data-id="PLACE_TYPE">
+                        <div class="e-search-label">Тип мест:</div>
+                        <div class="e-search-param-box" data-id="SEAT">
+                            <div class="e-search-param-label">Сидячие места</div>
+                            <div class="e-search-param-angle-up"><i class="fa fa-angle-up"></i></div>
+                            <div class="e-search-param-angle-down"><i class="fa fa-angle-down"></i></div>
+                        </div>
+                        <div class="e-search-param-dd">
+                            <div class="e-search-param-dd-item" data-id="ANY">- Любое -</div>
+                            <div class="e-search-param-dd-item" data-id="SEAT">Сидячие места</div>
+                            <div class="e-search-param-dd-item" data-id="NO_SEAT">Входные места</div>
+                            <div class="e-search-param-dd-item" data-id="SPLIT">Смешанные</div>
+                        </div>
+
+                    </div>
+
+                    <div class="three columns e-search-block"  data-id="RENT_PRICE">
+                        <div class="e-search-label">Стоимость аренды:</div>
+                        <div class="e-search-param-box" data-id="CONCERT_HALL">
+                            <div class="e-search-param-label">0 - 300 тыс. руб.</div>
+                            <div class="e-search-param-angle-up"><i class="fa fa-angle-up"></i></div>
+                            <div class="e-search-param-angle-down"><i class="fa fa-angle-down"></i></div>
+                        </div>
+                        <div class="e-search-param-dd">
+                            <div class="e-search-param-dd-item" data-id="ANY">- Любое -</div>
+                            <div class="e-search-param-dd-item" data-id="CONCERT_HALL">Концертный зал</div>
+                            <div class="e-search-param-dd-item" data-id="THEATRE">Театр</div>
+                            <div class="e-search-param-dd-item" data-id="CLUB">Клуб</div>
+                            <div class="e-search-param-dd-item" data-id="EXHIBITION_HALL">Выставочный зал</div>
+                            <div class="e-search-param-dd-item" data-id="CONFERENCR_HALL">Конференц зал</div>
+                            <div class="e-search-param-dd-item" data-id="BAR">Бар</div>
+                            <div class="e-search-param-dd-item" data-id="OPEN_AIR">Open Air</div>
+                        </div>
+
+                    </div>
+
+                    <div class="map-search-extended-toggler">Расширенный поиск</div>
+
+                </div>
+
+                <div class="row map-search-extended">
+
+                    <div class="six columns e-search-block"  data-id="ADDITIONAL">
+                        <div class="e-search-label">Дополнительно:</div>
+                        <div class="e-search-pick-params-box">
+                            <div class="row">
+                                <div class="six columns">
+
+                                    <div class="e-search-pick-param" data-id="PARKING_5">
+                                        <div class="e-search-pick-param-check"></div>
+                                        <div class="e-search-pick-param-title">Парковка (5)</div>
+                                    </div>
+
+                                    <div class="e-search-pick-param" data-id="PARKING_10">
+                                        <div class="e-search-pick-param-check"></div>
+                                        <div class="e-search-pick-param-title">Парковка (10)</div>
+                                    </div>
+
+                                    <div class="e-search-pick-param" data-id="PARKING_50">
+                                        <div class="e-search-pick-param-check"></div>
+                                        <div class="e-search-pick-param-title">Парковка (50)</div>
+                                    </div>
+
+                                    <div class="e-search-pick-param" data-id="BUFFET">
+                                        <div class="e-search-pick-param-check"></div>
+                                        <div class="e-search-pick-param-title">Буфет</div>
+                                    </div>
+
+                                    <div class="e-search-pick-param" data-id="BAR">
+                                        <div class="e-search-pick-param-check"></div>
+                                        <div class="e-search-pick-param-title">Бар</div>
+                                    </div>
+
+                                    <div class="e-search-pick-param" data-id="RESTAURANT">
+                                        <div class="e-search-pick-param-check"></div>
+                                        <div class="e-search-pick-param-title">Ресторан</div>
+                                    </div>
+
+                                </div>
+
+                                <div class="six columns">
+
+                                    <div class="e-search-pick-param" data-id="CASHBOX">
+                                        <div class="e-search-pick-param-check"></div>
+                                        <div class="e-search-pick-param-title">Касса</div>
+                                    </div>
+
+                                    <div class="e-search-pick-param" data-id="ETICKET">
+                                        <div class="e-search-pick-param-check"></div>
+                                        <div class="e-search-pick-param-title">Электронный билет</div>
+                                    </div>
+
+                                    <div class="e-search-pick-param" data-id="SKD">
+                                        <div class="e-search-pick-param-check"></div>
+                                        <div class="e-search-pick-param-title">SKD&nbsp;&nbsp;<i class="fa fa-info-circle"></i></div>
+                                    </div>
+
+                                    <div class="e-search-pick-param" data-id="PASSAGE_PLACE">
+                                        <div class="e-search-pick-param-check"></div>
+                                        <div class="e-search-pick-param-title">Проходное место</div>
+                                    </div>
+
+
+
+                                    <div class="e-search-pick-param" data-id="OUTDOOR_ADV">
+                                        <div class="e-search-pick-param-check"></div>
+                                        <div class="e-search-pick-param-title">Внешняя реклама</div>
+                                    </div>
+
+                                    <div class="e-search-pick-param" data-id="WARDROBE">
+                                        <div class="e-search-pick-param-check"></div>
+                                        <div class="e-search-pick-param-title">Гардероб</div>
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="six columns">
+                        <div class="row">
+                            <div class="six columns e-search-block"  data-id="DISTRICT">
+
+                                <div class="e-search-label">Округ Москвы:</div>
+                                <div class="e-search-param-box" data-id="CAO">
+                                    <div class="e-search-param-label">в ЦАО</div>
+                                    <div class="e-search-param-angle-up"><i class="fa fa-angle-up"></i></div>
+                                    <div class="e-search-param-angle-down"><i class="fa fa-angle-down"></i></div>
+                                </div>
+                                <div class="e-search-param-dd">
+                                    <div class="e-search-param-dd-item" data-id="ANY">- Любое -</div>
+                                    <div class="e-search-param-dd-item" data-id="CAO">в ЦАО</div>
+                                    <div class="e-search-param-dd-item" data-id="SAO">в CАО</div>
+                                    <div class="e-search-param-dd-item" data-id="SVAO">в СВАО</div>
+                                    <div class="e-search-param-dd-item" data-id="VAO">в ВАО</div>
+                                    <div class="e-search-param-dd-item" data-id="UVAO">в ЮВАО</div>
+                                    <div class="e-search-param-dd-item" data-id="UAO">в ЮАО</div>
+                                    <div class="e-search-param-dd-item" data-id="UZAO">в ЮЗАО</div>
+                                    <div class="e-search-param-dd-item" data-id="ZAO">в ЗАО</div>
+                                    <div class="e-search-param-dd-item" data-id="SZAO">в СЗАО</div>
+                                    <div class="e-search-param-dd-item" data-id="MO">в Области</div>
+                                </div>
+
+                            </div>
+
+                            <div class="six columns e-search-block"  data-id="METRO_STATION">
+                                <div class="e-search-label">Станция метро:</div>
+                                <div class="e-search-param-box" data-id="CAO">
+                                    <div class="e-search-param-label">- Любые -</div>
+                                    <div class="e-search-param-angle-up"><i class="fa fa-angle-up"></i></div>
+                                    <div class="e-search-param-angle-down"><i class="fa fa-angle-down"></i></div>
+                                </div>
+                                <div class="e-search-param-dd">
+                                    <div class="e-search-param-dd-item" data-id="ANY">- Любые -</div>
+                                    <div class="e-search-param-dd-item" data-id="IN_CIRCLE">Внутри кольца</div>
+                                    <div class="e-search-param-dd-item" data-id="IN_MCK">Внутри МЦК</div>
+                                    <div class="e-search-param-dd-item" data-id="SELECT"><i class="fa fa-subway"></i>&nbsp;&nbsp;Выбрать НА СХЕМЕ</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="six columns">
+
+                                <div class="e-search-results-count-box">
+                                    Найдено <span class="e-search-results-count">17</span> залов
+                                </div>
+
+                                <div class="e-search-confirm">
+                                    Найти!
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="container">
+
+            <div class="map-search-box">
+
+                <div class="map-results-box">
+
+                    <div class="map-res-item" data-id="">
+
+                        <div class="map-res-item-title">Градский Холл - Большой зал</div>
+                        <div class="map-res-item-image">
+                            <img src="assets/img/venue-1.jpg" />
+                        </div>
+                        <div class="map-res-item-info">
+                            asd
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="map-box">
+                    <iframe src="https://api-maps.yandex.ru/frame/v1/-/CVgQyK3F" width="100%" height="400" frameborder="0"></iframe>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="promo-block row">
+        <div class="container">
+
+            <div class="uni-title">Разместить площадку</div>
+
+            <br/>
+            <br/>
+
+            <div class="row">
+
+                <div class="five columns">
+                    Зарегистрируйте площадку на сервисе <b>easyHall</b> и
+                    начните получайть заявки от организаторов мероприятий
+                    уже сейчас!
+
+                    <br/><br/><br/>
+
+                    <input type="email" class="register-venue-email" placeholder="Введите Ваш Email"/>
+
+                    <div class="register-venue">Начать!</div>
+                </div>
+
+                <div class="seven columns">
+
+                    <div class="row">
+
+                        <div class="six columns empty">
+                            empty
+                        </div>
+
+                        <div class="six columns empty">
+                            empty
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="devider"></div>
+
+            <div class="row">
+
+                <div class="six columns">
+
+                    <div class="fw600 subscription-title">Получать новости и акции сервиса по СМС</div>
+
+                    <div class="subscription-block">
+                        <span class="plus-7">+7</span>
+                        <input type="tel" class="subscription-sms" placeholder="Ваш номер телефона"/>
+
+                        <div class="subscription-sms-submit">Подписаться</div>
+                    </div>
+
+
+                </div>
+
+                <div class="six columns">
+
+                    <div class="fw600 subscription-title">Мы в социальных сетях:</div>
+
+                    <div class="social-icon social-vk"><i class="fa fa-vk"></i></div>
+                    <div class="social-icon social-fb"><i class="fa fa-facebook"></i></div>
+                    <div class="social-icon social-tw"><i class="fa fa-twitter"></i></div>
+                    <div class="social-icon social-in"><i class="fa fa-instagram"></i></div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
+
+<div class="pre-footer">
+
+    <div class="container">
+        <div class="nine columns">
+            <a class="pre-footer-link" href="#">О Сервисе</a>
+            <a class="pre-footer-link" href="#">Контакты</a>
+            <a class="pre-footer-link" href="#">Карта сайта</a>
+            <a class="pre-footer-link" href="#">Новые площадки / залы</a>
+            <a class="pre-footer-link pre-footer-feedback" href="#">Обратная связь</a>
+            <a class="pre-footer-link" href="#">Мобильная версия</a>
+        </div>
+
+        <div class="three columns">
+            <div class="pre-footer-phone">
+                +7 (495) 685-45-45
+            </div>
+            <div class="pre-footer-phone-time">
+                с 9:00 до 18:00
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="copyright">
+        © EasyHall 2017 Все права защищены, сервис лицензирован.
+    </div>
+</div>
+
+
+<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+
+</body>
+</html>

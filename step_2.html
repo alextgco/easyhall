@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Hall - Аренда площадки</title>
+
+    <link href="assets/img/favicon_mb.png" rel="shortcut icon" type="image/i-icon">
+
+    <link rel="stylesheet" href="assets/plugins/Skeleton-2.0.4/css/normalize.css"/>
+    <link rel="stylesheet" href="assets/plugins/Skeleton-2.0.4/css/skeleton.css"/>
+    <link rel="stylesheet" href="assets/css/dropzone.css"/>
+    <link rel="stylesheet" href="assets/plugins/datepicker/css/bootstrap-datepicker.standalone.min.css"/>
+
+    <link rel="stylesheet" href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css"/>
+
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/responsive.css"/>
+
+</head>
+<body class="tpl-new-venue-2 tpl-new-venue">
+
+
+
+
+<div class="header">
+
+    <div class="row">
+        <div class="logo three columns">
+            <div class="logo-main">Easy H<span style="color:red;">a</span>ll</div>
+            <div class="logo-sub">Поиск площадок</div>
+        </div>
+
+        <div class="step-2-save step-save"><i class="fa fa-save"></i>&nbsp;&nbsp;Сохранить</div>
+
+        <!--<div class="step-user"><i class="fa fa-user"></i>&nbsp;&nbsp;Александр</div>-->
+
+    </div>
+
+</div>
+
+
+
+<div class="site-content">
+
+
+    <div class="l-container container">
+
+        <div class="step-2-venue-sidebar-box">
+
+            <div class="s2-field s2-name">Градский Холл</div>
+            <div class="s2-field">Концертный зал</div>
+            <div class="s2-field">Москва, Коровий вал 3 стр 2</div>
+            <div class="s2-field s2-images">
+                <div class="row">
+                    <div class="four columns s2-image"><img src="assets/img/hall-1.png"></div>
+                    <div class="four columns s2-image"><img src="assets/img/hall-2.jpg"></div>
+                    <div class="four columns s2-image"><img src="assets/img/hall-3.png"></div>
+                </div>
+            </div>
+            <div class="s2-field s2-description">
+                Сцена Государственное бюджетное учреждение культуры города Москвы «Московское
+                театрально-концертное музыкальное объединение под руководством А. Градского», неофициальное название
+                Театр Градского - театр в центре Москвы...
+            </div>
+            <div class="s2-field s2-options">
+
+                <div class="venue-tag " data-id="PARKING_10">
+                    <div class="venue-tag-icon"><i class="fa fa-car"></i></div>
+                    <div class="venue-tag-title">Парковка (10)</div>
+                </div>
+
+                <div class="venue-tag " data-id="RESTAURANT">
+                    <div class="venue-tag-icon">Р</div>
+                    <div class="venue-tag-title">Ресторан</div>
+                </div>
+
+                <div class="venue-tag " data-id="PARKING_5">
+                    <div class="venue-tag-icon">E</div>
+                    <div class="venue-tag-title">Электронный билет</div>
+                </div>
+
+                <div class="venue-tag " data-id="PARKING_5">
+                    <div class="venue-tag-icon">S</div>
+                    <div class="venue-tag-title">SKD</div>
+                </div>
+
+                <div class="venue-tag " data-id="PARKING_5">
+                    <div class="venue-tag-icon">Г</div>
+                    <div class="venue-tag-title">Гардероб</div>
+                </div>
+
+            </div>
+
+            <div class="s2-modify-venue"><i class="fa fa-edit"></i>&nbsp;&nbsp;Редактировать площадку</div>
+
+        </div>
+
+
+        <div class="step-2-hall-add">
+
+
+            <h5 class="step-hl">Создание зала:</h5>
+
+
+            <div class="eh-c-box" data-column="name">
+                <label>Название зала:</label>
+                <input type="text" class="eh-c-control" data-column="name"/>
+            </div>
+
+            <div class="eh-c-box" data-column="hall_type">
+                <label>Тип зала:</label>
+                <select class="eh-c-control" data-column="hall_type">
+                    <option value="-1">Другое</option>
+                    <option value="1">Концертный зал</option>
+                    <option value="2">Театр</option>
+                </select>
+            </div>
+
+            <div class="eh-c-box" data-column="venue_address">
+                <label>Адрес:<br/><span class="eh-c-set-same-address">Установить как у площадки</span></label>
+                <input type="text" class="eh-c-control" data-column="venue_address"/>
+            </div>
+
+            <div class="eh-c-box" data-column="name">
+                <label>Макс. кол-во сидячих мест:</label>
+                <input type="text" class="eh-c-control" data-column="name"/>
+            </div>
+
+            <div class="eh-c-box" data-column="name">
+                <label>Макс. кол-во входных мест:</label>
+                <input type="text" class="eh-c-control" data-column="name"/>
+            </div>
+
+            <div class="eh-c-box" data-column="name">
+                <label>Макс. общая вместимость:</label>
+                <input type="text" class="eh-c-control" data-column="name"/>
+            </div>
+
+            <div class="eh-c-box" data-column="name">
+                <label>Зал трансформер:<div class="eh-c-sub">Можно ли передвигать кресла?</div></label>
+                <input type="checkbox" class="eh-c-control" data-column="name"/>
+            </div>
+
+            <div class="eh-c-box" data-column="name">
+                <label>Стоимость аренды:<div class="eh-c-sub">Укажите базовую стоимость, доп. услуги отдельно.</div></label>
+                <input type="text" class="eh-c-control" data-column="name"/>
+            </div>
+
+            <div class="eh-c-box" data-column="venue_address">
+                <label class="eh-wide-label">Фотографии (не менее 3 шт):<div class="eh-c-sub">Высокого качества, размер строго 1200 х 470 px</div></label>
+
+                <form action="/file-upload"
+                      class="dropzone"
+                      id="my-awesome-dropzone"></form>
+
+            </div>
+
+
+            <div class="eh-c-box" data-column="build_date">
+                <label class="eh-wide-label">Описание:<div class="eh-c-sub">Напишите понятный и интересный текст о зале, не более 5 абзацев.</div></label>
+                <textarea class="eh-c-control " data-column="venue_description"></textarea>
+            </div>
+
+
+            <div class="eh-c-box" data-column="venue_address">
+                <label class="eh-wide-label">Схема зала:<div class="eh-c-sub">Загрузите картинку схемы зала.</div></label>
+
+                <form action="/file-upload"
+                      class="dropzone"
+                      id="my-awesome-dropzone-2"></form>
+
+            </div>
+
+
+            <div class="hall-tag-box">
+
+                <h6>Отметьте возможности зала:</h6>
+
+                <div class="venue-tag disabled" data-id="TABLES">
+                    <div class="venue-tag-icon"><i class="fa fa-glass"></i></div>
+                    <div class="venue-tag-title">Столики</div>
+                </div>
+
+                <div class="venue-tag disabled" data-id="TABLES">
+                    <div class="venue-tag-icon"><i class="fa fa-glass"></i></div>
+                    <div class="venue-tag-title">Еще тег</div>
+                </div>
+
+            </div>
+
+
+
+            <div class="eh-c-box" data-column="venue_address">
+                <label>Стиль:<br/><span class="eh-c-set-same-address">Установить как у площадки</span></label>
+                <select class="eh-c-control" data-column="hall_type">
+                    <option value="-1">Другое</option>
+                    <option value="1">Модерн</option>
+                    <option value="2">Классицизм</option>
+                </select>
+            </div>
+
+            <div class="eh-c-box" data-column="venue_address">
+                <label>Дата постройки:<br/><span class="eh-c-set-same-address">Установить как у площадки</span></label>
+                <input type="text" class="eh-c-control datepicker" data-column="venue_address"/>
+            </div>
+
+            <div class="eh-c-box" data-column="venue_address">
+                <label>Дата ремонта:<br/><span class="eh-c-set-same-address">Установить как у площадки</span></label>
+                <input type="text" class="eh-c-control datepicker" data-column="venue_address"/>
+            </div>
+
+
+            <h5 class="step-hl">Технические характеристики:</h5>
+
+
+            <div class="eh-c-box" data-column="build_date">
+                <label class="eh-wide-label">Сцена:<div class="eh-c-sub">Подробно опишите параметры сцены с профессиональной точки зрения.</div></label>
+                <textarea class="eh-c-control " data-column="venue_description"></textarea>
+            </div>
+
+            <div class="eh-c-box" data-column="build_date">
+                <label class="eh-wide-label">Звук:<div class="eh-c-sub">Подробно опишите аккустические характеристики зала, в том числе оборудование.</div></label>
+                <textarea class="eh-c-control " data-column="venue_description"></textarea>
+            </div>
+
+            <div class="eh-c-box" data-column="build_date">
+                <label class="eh-wide-label">Свет:<div class="eh-c-sub">Подробно опишите освещение зала, в том числе оборудование.</div></label>
+                <textarea class="eh-c-control " data-column="venue_description"></textarea>
+            </div>
+
+            <div class="eh-c-box" data-column="build_date">
+                <label class="eh-wide-label">Съемка:<div class="eh-c-sub">Подробно опишите возможности зала с точки зрения съемки.</div></label>
+                <textarea class="eh-c-control " data-column="venue_description"></textarea>
+            </div>
+
+
+            <div class="step-2-save step-save"><i class="fa fa-save"></i>&nbsp;&nbsp;Сохранить</div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="pre-footer">
+
+    <div class="container">
+        <div class="nine columns">
+            <a class="pre-footer-link" href="#">О Сервисе</a>
+            <a class="pre-footer-link" href="#">Контакты</a>
+            <a class="pre-footer-link" href="#">Карта сайта</a>
+            <a class="pre-footer-link" href="#">Новые площадки / залы</a>
+            <a class="pre-footer-link pre-footer-feedback" href="#">Обратная связь</a>
+            <a class="pre-footer-link" href="#">Мобильная версия</a>
+        </div>
+
+        <div class="three columns">
+            <div class="pre-footer-phone">
+                +7 (495) 685-45-45
+            </div>
+            <div class="pre-footer-phone-time">
+                с 9:00 до 18:00
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="copyright">
+        © EasyHall 2017 Все права защищены, сервис лицензирован.
+    </div>
+</div>
+
+
+<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/mustache/mustache.js"></script>
+<script type="text/javascript" src="assets/plugins/dropzone/dropzone.js"></script>
+<script type="text/javascript" src="https://dadata.ru/static/js/lib/jquery.suggestions-15.6.min.js"></script>
+<script type="text/javascript" src="assets/plugins/datepicker/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="assets/plugins/datepicker/locales/bootstrap-datepicker.ru.min.js"></script>
+<script type="text/javascript" src="assets/plugins/tinymce/js/tinymce/tinymce.min.js"></script>
+
+
+<script type="text/javascript" src="assets/js/temp.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+
+
+</body>
+</html>

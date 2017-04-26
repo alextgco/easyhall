@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Hall - Аренда площадки</title>
+
+    <link href="assets/img/favicon_mb.png" rel="shortcut icon" type="image/i-icon">
+
+    <link rel="stylesheet" href="assets/plugins/Skeleton-2.0.4/css/normalize.css"/>
+    <link rel="stylesheet" href="assets/plugins/Skeleton-2.0.4/css/skeleton.css"/>
+    <link rel="stylesheet" href="assets/css/dropzone.css"/>
+    <link rel="stylesheet" href="assets/plugins/datepicker/css/bootstrap-datepicker.standalone.min.css"/>
+
+    <link rel="stylesheet" href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css"/>
+
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/responsive.css"/>
+
+</head>
+<body class="tpl-new-venue">
+
+
+
+
+<div class="header">
+
+    <div class="row">
+        <div class="logo three columns">
+            <div class="logo-main">Easy H<span style="color:red;">a</span>ll</div>
+            <div class="logo-sub">Поиск площадок</div>
+        </div>
+
+        <div class="step-1-save  step-save"><i class="fa fa-save"></i>&nbsp;&nbsp;Сохранить</div>
+
+    </div>
+
+</div>
+
+
+
+<div class="site-content">
+
+
+
+
+    <div class="l-container container">
+
+        <h5 class="step-hl">Создание площадки:</h5>
+
+        <div class="formWrapper">
+            <div class="yandex_map"></div>
+
+            <div class="venue-tag-box">
+
+                <h6>Отметьте возможности Вашей площадки:</h6>
+
+                <div class="venue-tag disabled" data-id="PARKING_5">
+                    <div class="venue-tag-icon"><i class="fa fa-car"></i></div>
+                    <div class="venue-tag-title">Парковка (5)</div>
+                </div>
+
+                <div class="venue-tag disabled" data-id="PARKING_10">
+                    <div class="venue-tag-icon"><i class="fa fa-car"></i></div>
+                    <div class="venue-tag-title">Парковка (10)</div>
+                </div>
+
+                <div class="venue-tag disabled" data-id="PARKING_50">
+                    <div class="venue-tag-icon"><i class="fa fa-car"></i></div>
+                    <div class="venue-tag-title">Парковка (50)</div>
+                </div>
+
+
+                <div class="venue-tag disabled" data-id="BUFFET">
+                    <div class="venue-tag-icon">Б</div>
+                    <div class="venue-tag-title">Буфет</div>
+                </div>
+
+                <div class="venue-tag disabled" data-id="BAR">
+                    <div class="venue-tag-icon">Б</div>
+                    <div class="venue-tag-title">Бар</div>
+                </div>
+
+                <div class="venue-tag disabled" data-id="RESTAURANT">
+                    <div class="venue-tag-icon">Р</div>
+                    <div class="venue-tag-title">Ресторан</div>
+                </div>
+
+
+
+                <div class="venue-tag disabled" data-id="PARKING_5">
+                    <div class="venue-tag-icon">E</div>
+                    <div class="venue-tag-title">Электронный билет</div>
+                </div>
+
+                <div class="venue-tag disabled" data-id="PARKING_5">
+                    <div class="venue-tag-icon">S</div>
+                    <div class="venue-tag-title">SKD</div>
+                </div>
+
+                <div class="venue-tag disabled" data-id="PARKING_5">
+                    <div class="venue-tag-icon">Г</div>
+                    <div class="venue-tag-title">Гардероб</div>
+                </div>
+
+                <div class="venue-tag disabled" data-id="PASSAGE_PLACE">
+                    <div class="venue-tag-icon"><img src="assets/img/walk.png"></div>
+                    <div class="venue-tag-title">Проходное место</div>
+                </div>
+
+                <div class="venue-tag disabled" data-id="PARKING_5">
+                    <div class="venue-tag-icon">А</div>
+                    <div class="venue-tag-title">Внешняя реклама</div>
+                </div>
+
+                <div class="venue-tag disabled" data-id="PARKING_5">
+                    <div class="venue-tag-icon">К</div>
+                    <div class="venue-tag-title">Касса</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="eh-c-box" data-column="name">
+            <label>Представьтесь, пожалуйста:</label>
+            <input type="text" class="eh-c-control" data-column="user_name"/>
+        </div>
+
+        <div class="eh-c-box" data-column="name">
+            <label>Ваш телефон:<div class="eh-c-sub">Заявки на аренду будут приходить по СМС.</div></label>
+            <input type="text" class="eh-c-control" data-column="user_phone"/>
+        </div>
+
+        <div class="eh-c-box" data-column="name">
+            <label>Название площадки:</label>
+            <input type="text" class="eh-c-control" data-column="name"/>
+        </div>
+
+        <div class="eh-c-box" data-column="venue_type">
+            <label>Тип площадки:</label>
+            <select class="eh-c-control" data-column="venue_type">
+                <option value="-1">Другое</option>
+                <option value="1">Концертный зал</option>
+                <option value="2">Театр</option>
+            </select>
+        </div>
+
+        <div class="eh-c-box" data-column="venue_address">
+            <label>Адрес:</label>
+            <input type="text" class="eh-c-control" data-column="venue_address"/>
+        </div>
+
+        <div class="eh-c-box" data-column="venue_address">
+            <label class="eh-wide-label">Фотографии (не менее 3 шт):<div class="eh-c-sub">Высокого качества, размер строго 1200 х 470 px</div></label>
+
+            <form action="/file-upload"
+                  class="dropzone"
+                  id="my-awesome-dropzone"></form>
+
+        </div>
+
+        <div class="eh-c-box" data-column="venue_address">
+            <label class="eh-wide-label">Галерея:<div class="eh-c-sub">Добавьте разных фотографий с площадки, не забудьте подписать каждую.</div></label>
+
+            <form action="/file-upload"
+                  class="dropzone"
+                  id="my-awesome-dropzone-2"></form>
+
+        </div>
+
+        <div class="eh-c-box" data-column="venue_type">
+            <label>Стиль здания:</label>
+            <select class="eh-c-control" data-column="venue_type">
+                <option value="-1">Другое</option>
+                <option value="1">Модерн</option>
+                <option value="2">Классицизм</option>
+            </select>
+        </div>
+
+        <div class="eh-c-box" data-column="build_date">
+            <label>Дата постройки:<div class="eh-c-sub">(Можно примерно)</div></label>
+            <input type="text" class="eh-c-control eh-c-control-date" data-column="build_date"/>
+        </div>
+
+        <div class="eh-c-box" data-column="build_date">
+            <label>Дата ремонта/реконструкции:<div class="eh-c-sub">(Можно примерно)</div></label>
+            <input type="text" class="eh-c-control eh-c-control-date" data-column="build_date"/>
+        </div>
+
+        <div class="eh-c-box" data-column="build_date">
+            <label class="eh-wide-label">Описание:<div class="eh-c-sub">Напишите понятный и интересный текст о Вашей площадке, не более 5 абзацев.</div></label>
+            <textarea class="eh-c-control " data-column="venue_description"></textarea>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="pre-footer">
+
+    <div class="container">
+        <div class="nine columns">
+            <a class="pre-footer-link" href="#">О Сервисе</a>
+            <a class="pre-footer-link" href="#">Контакты</a>
+            <a class="pre-footer-link" href="#">Карта сайта</a>
+            <a class="pre-footer-link" href="#">Новые площадки / залы</a>
+            <a class="pre-footer-link pre-footer-feedback" href="#">Обратная связь</a>
+            <a class="pre-footer-link" href="#">Мобильная версия</a>
+        </div>
+
+        <div class="three columns">
+            <div class="pre-footer-phone">
+                +7 (495) 685-45-45
+            </div>
+            <div class="pre-footer-phone-time">
+                с 9:00 до 18:00
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="copyright">
+        © EasyHall 2017 Все права защищены, сервис лицензирован.
+    </div>
+</div>
+
+
+<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/mustache/mustache.js"></script>
+<script type="text/javascript" src="assets/plugins/dropzone/dropzone.js"></script>
+<script type="text/javascript" src="https://dadata.ru/static/js/lib/jquery.suggestions-15.6.min.js"></script>
+<script type="text/javascript" src="assets/plugins/datepicker/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="assets/plugins/datepicker/locales/bootstrap-datepicker.ru.min.js"></script>
+<script type="text/javascript" src="assets/plugins/tinymce/js/tinymce/tinymce.min.js"></script>
+
+
+<script type="text/javascript" src="assets/js/temp.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+
+
+</body>
+</html>

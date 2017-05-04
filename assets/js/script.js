@@ -29,6 +29,7 @@ $(document).ready(function(){
             }
 
         },
+
         dialog: function(obj){
 
             var tpl = '<div class="eh-dialog-holder">' +
@@ -75,9 +76,27 @@ $(document).ready(function(){
             });
 
 
+        },
+
+        getHall: function(cb){
+
+            var o = {
+                command: 'get_hall'
+            };
+
+            console.log('111');
+
+            socketQuery_site(o, function (res) {
+
+                console.log('asdsa', res);
+
+            });
+
         }
 
     };
+
+    eh.getHall();
 
 
     $('.main-search-param-box').off('click').on('click', function(){
@@ -396,7 +415,10 @@ $(document).ready(function(){
 
     //---
 
-    //$("div.dropzone").dropzone({ url: "AAA" });
+
+
+
+
 
 });
 

@@ -2118,3 +2118,55 @@ input.eh-c-control[type="checkbox"] {
 .step-2-hall-add .step-save:hover {
     background-color: #69ee43;
 }
+
+.step-3-halls .step-save {
+    position: relative;
+    left: 0;
+    background-color: #a9f300;
+}
+.step-3-halls .step-save:hover {
+    background-color: #69ee43;
+}
+
+.eh-hall-item-box {
+    background-color: #fff;
+    margin-right: 30px;
+    box-shadow: 0 10px 15px rgba(96, 125, 139, 0.21);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding-bottom: 23px;
+}
+.eh-hall-item-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 23px;
+}
+.eh-hall-item-places {
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 20px;
+    display: inline-block;
+    font-size: 17px;
+}
+.eh-hall-item-price {
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 20px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 17px;
+}
+.eh-hall-item-modify {
+    float: right;
+    margin-right: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.eh-hall-item-modify:hover {
+    color: #2196F3;
+}
+.step-3-halls {
+    min-height: 670px;
+}

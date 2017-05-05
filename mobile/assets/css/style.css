@@ -1,0 +1,200 @@
+body{
+    position: relative;
+}
+.pre-header-item {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 9px;
+
+}
+.pre-header-item a{
+    text-decoration: none;
+    color: #fff;
+}
+.pre-header{
+    background-color: #f7f7f7;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.header {
+    padding-bottom: 10px;
+    width: 100%;
+    /*height: 70px;*/
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.header-bg{
+    width: 100%;
+    height: 150px;
+    background-image: url(../img/mobile-top.jpg);
+    background-size: cover;
+    background-position: 50%;
+    position: absolute;
+}
+.header-fader{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.logo-main {
+    color: #000;
+    z-index: 10;
+    position: relative;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 100px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.logo-sub {
+    color: rgb(0, 0, 0);
+    z-index: 10;
+    display: inline-block;
+    position: relative;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    line-height: 13px;
+    margin-left: 20px;
+}
+.main-search {
+    box-sizing: border-box;
+    padding: 20px 10px 20px 10px;
+    background-color: rgba(0,0,0,.04);
+}
+.h-select{
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    height: 42px;
+    padding-left: 20px;
+}
+.h-search-title {
+    margin-bottom: 13px;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #607D8B;
+}
+.h-select-holder{
+    position: relative;
+}
+.h-select-arrow{
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    top: 8px;
+    right: 8px;
+}
+.h-search-confirm {
+    width: calc(100% - 20px);
+    background-color: #8BC34A;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 9px;
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+.h-found-count{
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+.pre-header-fader{
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+    position: relative;
+    z-index: 40;
+}
+
+.venue-type-box{
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.venue-type-image {
+    height: 130px;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 5px 5px 0 0;
+}
+.venue-type-title{
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: 600;
+}
+.venue-type-links{
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 0 0 5px 5px;
+}
+.venue-type-links a{
+    border: 1px solid;
+    padding: 1px 11px;
+    text-decoration: none;
+    margin-bottom: 6px;
+    display: inline-block;
+    border-radius: 14px;
+    margin-right: 6px;
+}
+.venue-type-boxes{
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(0,0,0,.04);
+}
+.favorite-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 80px;
+    border: 3px solid #FFEB3B;
+    margin: 5px;
+}
+.favorite-title {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+.favorite-train {
+    width: 5000px;
+}
+.favorite-menu-item {
+    display: inline-block;
+    margin-right: 25px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color: #607D8B;
+}
+.favorite-menu {
+    overflow: hidden;
+}
+.favorite-sub {
+    text-align: center;
+    color: #607D8B;
+    margin-bottom: 9px;
+}

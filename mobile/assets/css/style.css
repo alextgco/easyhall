@@ -84,9 +84,9 @@ body{
 }
 .h-select-arrow{
     position: absolute;
+    background-color: #e3f5ff;
     height: 26px;
     width: 26px;
-    background-color: #f1f1f1;
     border-radius: 50%;
     top: 8px;
     right: 8px;
@@ -167,10 +167,8 @@ body{
 .favorite-box {
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 80px;
-    border: 3px solid #FFEB3B;
-    margin: 5px;
-    background-color: #f9f9f9;
+    border: 4px solid #FFEB3B;
+    background-color: #ffffff;
 }
 .favorite-title {
     font-size: 20px;
@@ -224,13 +222,17 @@ body{
 }
 .f-hall-info {
     background-color: #fff;
-    min-height: 270px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 }
 .f-hall-order {
     background-color: #fff;
     border-radius: 0 0 5px 5px;
     position: relative;
     border-top: 2px solid #98e63c;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 .featured-block {
     background-color: #f7f7f7;
@@ -239,12 +241,12 @@ body{
     padding-top: 30px;
 }
 .f-hall-title {
-    font-weight: bold;
+    font-weight: 600;
+    line-height: 26px;
     padding-left: 10px;
-    padding-top: 20px;
-    padding-bottom: 0;
-    font-size: 17px;
-    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 22px;
 }
 .f-hall-venue {
     padding-left: 10px;
@@ -323,4 +325,38 @@ body{
 }
 .f-hall-order-cta:hover {
     background-color: #a9f300;
+}
+.f-hall-quick-view {
+    float: right;
+    font-size: 12px;
+    margin-right: 15px;
+    margin-top: 1px;
+    line-height: 15px;
+    color: #048df9;
+    font-weight: 500;
+    text-align: right;
+    cursor: pointer;
+}
+.hide-button .h-search-confirm{
+    display: none;
+}
+.f-hall {
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.featured-row-more{
+    margin: 0 auto;
+    width: 290px;
+    height: 60px;
+    margin-top: 30px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 30px;
+    padding-top: 17px;
+    box-sizing: border-box;
+    background-color: rgba(96, 125, 139, 0.13);
+    margin-bottom: 30px;
+    outline: 0;
+    cursor: pointer;
 }
